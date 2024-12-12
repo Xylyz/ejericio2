@@ -1,0 +1,28 @@
+h1{
+    color: chocolate;
+    text-align: center;
+
+}
+
+.container {
+    height: 400px;
+    color: rgb(230, 168, 12);
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* flex-start, flex-end, space-between, space-around, center*/
+    align-items: center;  /*flex-start, flex-end, stretch, baseline, center*/
+}
+
+.item{
+    font-size: 40px;
+    background-color: rgb(23, 34, 185);
+    border: solid;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    flex-grow: 200px; /*flex-grow, flex-shrink, flex-basis*/
+    
+}
+
+

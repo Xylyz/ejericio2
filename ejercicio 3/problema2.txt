@@ -1,0 +1,27 @@
+/*
+Categoría 1, 5 – 14 = 35 %
+Categoría 2, 15 – 19 = 25 %
+Categoría 3, 20 - 45 =10 %
+Categoría 4, 46 - 65 = 25 %
+Categoría 5, 66 en adelante 35 %
+Costo del boleto es 30.000 pesos
+*/
+
+
+let edad = prompt("Digite la edad:");
+const boleto = prompt("Digite el valor del boleto:");
+let perdida = 0;
+
+if(edad<5){
+    console.log("Niños menores de 5 años no deben ingresar");
+}else if( (edad>=5 && edad <=14) || (edad>=66) ){
+    perdida = boleto * 0.35;
+}else if( (edad>=15 && edad<=19) || (edad>=46 && edad<=65) ){
+    perdida = boleto * 0.25;
+}else if(edad>=20 && edad<=45){
+    perdida = boleto * 0.1;
+}else{
+    console.log("ERROR: No ha ingresado a ningún rango");
+}
+
+console.log( "El valor que se ha dejado de percibir es: " + perdida + " pesos");

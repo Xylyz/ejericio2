@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro al evento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulario de registro al evento</h1>
+
+    <form action="/enviar_formulario" method="post">
+
+        <label for="nombre">Nombres:</labelZ><input type="text" name="Nombres" id="nombres">
+
+        <label for="apellidos">Apellidos:</label><input type="text" name="Apellidos" id="apellidos">
+        
+        <label for="correo_electrónico">Correo electrónico:</label><input type="text" name="Correo electrónico" id="correo electrónico">
+
+        <label for="número_teléfono">Número de teléfono:</label><input type="text" name="Número de teléfono" id="número de teléfono">
+
+        <label for="fecha"> Fecha de nacimiento:</label> <input type="date" name="fecha_nacimiento" id="">
+        
+
+        <div>
+        <fieldset>
+        <legend>Género:</legend><input type="radio" id="masculino" name="genero" value="masculino"> <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino"> <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="otro"> <label for="otro">Otro</label>
+        </fieldset>
+        </div>
+        
+
+        <div>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="ar"> Argentina</option>
+            <option value="co"> Colombia</option>
+            <option value="pe"> Perú</option>
+            <option value="ch"> Chile</option>
+            <option value="ur"> Uruguay</option>
+        </select>
+        </div>
+        
+
+        <div>
+            <label for="comentarios"> Comentarios(opcional)</label>
+            <textarea name="comentarios" id="comentarios" rows="5" cols="50" placeholder="Escríbenos"></textarea>
+
+        </div>
+        
+
+        <div>
+            <input type="checkbox" id="terminos" name="terminos" required> <label for="terminos"> Acepto los términos y condciones</label><br>
+
+            <button type="submit"> Enviar</button>
+            <button type="reset"> Limpiar</button>
+        
+        </div>
+
+             
+
+    </form>
+</body>
+</html>

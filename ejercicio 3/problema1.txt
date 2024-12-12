@@ -1,0 +1,13 @@
+
+Ejercicio: Calcular el Descuento según la Edad
+Descripción: Escribe un programa que calcule el descuento en el precio de entrada de una película basado en la edad de la persona.
+
+Si la persona tiene menos de 5 años o más de 60 años, el descuento es del 50%.
+
+Si la persona tiene entre 5 y 12 años, el descuento es del 30%.
+
+Si la persona tiene entre 13 y 17 años, el descuento es del 20%.
+
+Si la persona tiene entre 18 y 60 años, no hay descuento.
+
+Objetivo: Mostrar el precio final de la entrada después de aplicar el descuento correspondiente.

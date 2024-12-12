@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    color: darkturquoise;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar header header" "sidebar main main" "sidebar footer footer";
+    gap: 5px;
+    height: 100vh;
+    color: lightyellow;
+}
+
+.header{
+    grid-area: header;
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: red;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main{
+    grid-area: main;
+    background-color: green;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:goldenrod;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
